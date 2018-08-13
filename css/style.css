@@ -10,11 +10,459 @@ html {
 }
 
 body {
+	font-family: 'Aleo';
+	font-weight: 400;
 	font-size: 1.6rem; /* 10px * 1.6 = 16px */
 }
 
+.main-header {
+	min-height: 110px;
+}
 
+.main-header .container {
+	min-height: 110px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 
+/*
+	* Logo
+*/
+
+.logo {
+	width: 70px;
+	font-family: 'WCManoNegraBta';
+	font-size: 40px;
+	line-height: 60px;
+	color: #3a3939;
+	text-decoration: none;
+	letter-spacing: -2px;
+}
+
+.logo span {
+	color: #f34949;
+}
+
+/*
+	* // Logo
+*/
+
+/*
+	* Main Menu
+*/
+.main-navigation {
+	min-width: 490px;
+	margin-left: 530px;
+}
+
+.nav-list {
+	margin: 0;
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.nav-list .nav-list-item a {
+	font-weight: 400;
+	line-height: 60px;
+	text-decoration: none;
+	color: #3b3b3b;
+}
+/*
+	* // Main Menu
+*/
+
+/*
+	* Billboard
+*/
+.billboard {
+	height: 570px;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	color: #fff;
+	background: url('../img/bg/background-image.jpg') no-repeat top center;
+	box-shadow: 0px 4px 0px 0px #f34949
+}
+
+.billboard b {
+	margin-top: 60px;
+	margin-bottom: 18px;
+	font-family: 'WCManoNegraBta';
+	font-size: 100px;
+	font-weight: 400;
+	line-height: 60px;
+}
+
+.billboard p {
+	position: relative;
+	
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 60px;
+	word-spacing: 8px;
+}
+
+.billboard p::before {
+	position: absolute;
+	top: 32px;
+	left: -60px;
+	content: "";
+	width: 37px;
+	height: 1px;
+	background-color: #fff;
+}
+
+.billboard p::after {
+	position: absolute;
+	top: 32px;
+	right: -60px;
+	content: "";
+	width: 37px;
+	height: 1px;
+	background-color: #fff;
+}
+/*
+	* // Billboard
+*/
+
+/*
+	* Menu
+*/
+.menu {
+	height: 800px;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.menu-title {
+	position: relative;
+	
+	width: 156px;
+	height: 60px;
+	margin: 0;
+	margin-bottom: 80px;
+	font-size: 20px;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	background-color: #f34949;
+}
+
+.menu-title::before {
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	content: "";
+	height: 0px;
+	width: 78px;
+	border: 10px solid #f34949;
+	border-top-color: #f34949;
+}
+
+.menu-title::after {
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	content: "";
+	height: 0px;
+	width: 78px;
+	border: 10px solid #f34949;
+	border-top-color: #f34949;
+}
+
+.menu-list {
+	width: 1100px;
+	margin: 0;
+	margin-bottom: 90px;
+	padding: 0;
+	text-align: left;
+	list-style-type: none;
+	column-count: 2;
+	column-width: 490px;
+}
+
+.menu-list-item {
+	height: 40px;
+	margin-bottom: 60px;
+}
+
+.dish-name {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-weight: 400;
+	color: #555454;
+}
+
+.dish-ingredients {
+	font-style: italic;
+	font-size: 12px;
+	font-weight: 300;
+	color: #b7b7b7;
+}
+
+.dish-price {
+	display: none;
+	
+	color: #555555;
+}
+
+.btn {
+	display: inline-block;
+	width: 133px;
+	height: 34px;
+	padding-left: 15px;
+	font-size: 14px;
+	text-align: left;
+	color: #b7b7b7;
+	background-color: #fff;
+	border: 1px solid #b7b7b7;
+}
+/*
+	* // Menu
+*/
+
+/*
+	* Featured Dishes
+*/
+.featured-dishes {
+	height: 550px;
+}
+
+.main-title {
+	position: relative;
+	
+	display: inline-block;
+	margin-bottom: 80px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 60px;
+	color: #3b3b3b;
+	text-transform: uppercase;
+}
+
+.main-title::after {
+	position: absolute;
+	left: 197px;
+	top: 30px;
+	content: "";
+	width: 200px;
+	height: 1px;
+	background-color: #e5e3e3;
+}
+
+.featured-dishes-list {
+	margin: 0;
+	padding: 0;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.featured-dishes-list .featured-dishes-list-item {
+	list-style-type: none;
+}
+
+.featured-dishes-list-item img {
+	width: 230px;
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+.featured-dishes-list-item .featured-dish-title {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #555;
+}
+
+.dish-rate {
+	width: 80px;
+	height: 13px;
+}
+
+.dish-rate img {
+	width: 12px;
+	height: 13px;
+}
+
+.dish-price {
+	font-size: 16px;
+	font-weight: 300;
+	color: #555;
+}
+/*
+	* // Featured Dishes
+*/
+
+/*
+	* Gallery
+*/
+.gallery {
+	padding-bottom: 200px;
+}
+
+.gallery-block {
+	width: 1100px;
+	height: 432px;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.image-large {
+	width: 366px;
+	height: 432px;
+}
+
+.small-images {
+	width: 366px;
+	height: 432px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+}
+/*
+	* // Gallery
+*/
+
+/*
+	* Footer
+*/
+.main-footer {
+	font-size: 16px;
+	line-height: 30px;
+	color: #fff;
+	background-color: #3b3b3b;
+}
+
+.main-footer .container {
+	min-height: 320px;
+
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer-information {
+	width: 690px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.footer-contacts {
+	width: 190px;
+}
+
+.footer-contacts .footer-title {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+
+.footer-contacts .adress {
+	color: #ebebeb;
+	font-weight: 300;
+}
+
+.footer-contacts a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 400;
+}
+
+.footer-menu {
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu li {
+	list-style-type: none;
+	
+}
+
+.footer-menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-copyright {
+	width: 200px;
+}
+
+.main-footer .logo {
+	line-height: 1;
+	margin-bottom: 30px;
+	color: #fff;
+}
+
+.footer-copyright p {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 30px;
+	color: #ececec;
+}
+
+.footer-copyright a {
+	text-decoration: none;
+	color: #ececec;
+	font-weight: 700;
+}
+
+/*
+	* // Footer
+*/
 
 /*==========  Desktop First Method  ==========*/
 
